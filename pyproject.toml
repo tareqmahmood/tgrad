@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tgrad"
-version = "0.1.0"
+version = "0.1.1"
 description = "Telegram daemon with CLI and Unix socket"
 authors = [{ name = "Tareq Mahmood", email = "check@my.website" }]
 readme = "README.md"
