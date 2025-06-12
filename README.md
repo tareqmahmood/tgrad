@@ -1,4 +1,7 @@
-# tgrad
+# tgrad 
+
+![Release](https://github.com/tareqmahmood/tgrad/actions/workflows/release.yml/badge.svg) [![PyPI - Version](https://img.shields.io/pypi/v/tgrad)](https://pypi.org/project/tgrad/)
+
 
 `tgrad` is a lightweight Python-based Telegram daemon. It lets other programs send messages to a Telegram bot using a local Unix domain socket. Includes a CLI and a Python API.
 
@@ -16,6 +19,11 @@
 
 ## 📦 Installation
 
+```bash
+pip install tgrad
+```
+
+From latest in Github
 ```bash
 git clone https://github.com/tareqmahmood/tgrad.git
 cd tgrad
