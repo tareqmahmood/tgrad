@@ -14,7 +14,7 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.io/tareqmahmood/tgrad.git
+git clone https://github.com/tareqmahmood/tgrad.git
 cd tgrad
 pip install .
 ```
