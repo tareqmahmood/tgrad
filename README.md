@@ -49,6 +49,7 @@ pip install .
 
 <details>
    <summary>Details on setting up a Telegram bot</summary>
+   
    Before using `tgrad`, you need to create a Telegram bot and get the **bot token** and **chat ID**.
    
    ### Step 1: Create a Telegram Bot
