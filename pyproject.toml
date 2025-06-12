@@ -1,0 +1,13 @@
+[project]
+name = "tgrad"
+version = "0.1.0"
+description = "Telegram daemon with CLI and Unix socket"
+authors = [{ name = "Tareq Mahmood", email = "check@my.website" }]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["python-telegram-bot>=20.0"]
+
+[project.scripts]
+tgrad-config = "tgrad.config:main"
+tgrad-server = "tgrad.server:main"
+tgrad-client = "tgrad.client:main"
