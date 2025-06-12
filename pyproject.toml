@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tgrad"
-version = "0.1.1"
-description = "Telegram daemon with CLI and Unix socket"
+version = "0.1.2"
+description = "Lightweight Python-based Telegram daemon for notification"
 authors = [{ name = "Tareq Mahmood", email = "check@my.website" }]
 readme = "README.md"
 license = {text = "MIT"}
