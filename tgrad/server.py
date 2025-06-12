@@ -4,9 +4,13 @@ import threading
 import logging
 from telegram import Bot
 from tgrad.config import load_config, get_socket_path
+import asyncio
 
 logger = logging.getLogger("tgrad")
 logging.basicConfig(level=logging.INFO)
+
+async def send(bot, chat_id, title, msg):
+    await bot.send_message(chat_id=chat_id, text=f"*{title}*\n{msg}", parse_mode='Markdown')
 
 def handle_client(conn, bot, chat_id):
     try:
@@ -15,7 +19,7 @@ def handle_client(conn, bot, chat_id):
             if data:
                 lines = data.split("\n", 1)
                 title, msg = lines if len(lines) == 2 else ("Message", lines[0])
-                bot.send_message(chat_id=chat_id, text=f"*{title}*\n{msg}", parse_mode='Markdown')
+                asyncio.run(send(bot, chat_id, title, msg))
     except Exception as e:
         logger.error(f"Client error: {e}")
 
